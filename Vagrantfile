@@ -23,6 +23,8 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   #
+  # Port onto which our web app listens
+  config.vm.network "forwarded_port", guest: 8080, host: 8080
   # For remote debugging our Spring Boot application
   config.vm.network "forwarded_port", guest: 5005, host: 5005
 

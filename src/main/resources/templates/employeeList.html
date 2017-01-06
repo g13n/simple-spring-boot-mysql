@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employees List</title>
+  <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+  <h1>Employees List</h1>
+  <table class="employees-list">
+    <thead>
+      <tr>
+        <th>Emp no.</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Gender</th>
+        <th>Hire date</th>
+        <th>Age (in years)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#employees}}
+      <tr>
+        <td>{{empNo}}</td>
+        <td>{{firstName}}</td>
+        <td>{{lastName}}</td>
+        <td>{{gender}}</td>
+        <td>{{hireDate}}</td>
+        <td>{{birthDate}}</td>
+      </tr>
+      {{/employees}}
+    </tbody>
+  </table>
+</body>
+</html>

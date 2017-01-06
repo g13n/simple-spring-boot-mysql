@@ -16,7 +16,7 @@ apply plugin: 'org.springframework.boot'
 
 jar {
     baseName = 'simple-spring-boot-mysql'
-    version = '0.0.1-SNAPSHOT'
+    version = '0.0.3-SNAPSHOT'
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -27,8 +27,9 @@ repositories {
 
 
 dependencies {
-    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('org.springframework.boot:spring-boot-starter-jdbc')
+    compile('org.springframework.boot:spring-boot-devtools')
+    compile('com.google.guava:guava:20.0')
     runtime('mysql:mysql-connector-java')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
 }

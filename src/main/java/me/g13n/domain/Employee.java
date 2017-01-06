@@ -1,4 +1,4 @@
-package me.g13n.model;
+package me.g13n.domain;
 
 import java.util.Date;
 
